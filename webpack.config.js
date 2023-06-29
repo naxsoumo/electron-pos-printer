@@ -42,7 +42,7 @@ module.exports = [
             umdNamedDefine: true,
         },
         optimization: {
-            minimize: true,
+            minimize: false,
             minimizer: [new TerserPlugin()],
         },
         plugins: [
@@ -60,7 +60,7 @@ module.exports = [
             filename: "[name].js"
         },
         optimization: {
-            minimize: true,
+            minimize: false,
             minimizer: [
                 new CssMinimizerPlugin(),
                 new TerserPlugin()
